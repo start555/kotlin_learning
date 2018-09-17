@@ -63,6 +63,57 @@ fun main(args: Array<String>){
     println("Куб = $cube")
 
 
+// 20. Пользователь вводит время в минутах и расстояние в километрах. Найдите скорость в м/c.
+    println("Enter time in minutes: ")
+    val time_in_sec: Double = (readLine()!!.toDouble())*60
+    println("Enter length in km: ")
+    val metr_length: Double = (readLine()!!.toDouble())*100
+    val speed = (metr_length/time_in_sec).toInt()
+    println("Speed: $speed m/s")
+
+// 21.   Даны катеты прямоугольного треугольника. Найдите площадь, периметр и гипотенузу треугольника.
+    val kat1 = 3.0
+    val kat2 = 4.0
+    val s = (kat1 + kat2)/2
+    println("Площадь: $s")
+    val hupo = sqrt(Math.pow(kat1, 2.0) + Math.pow(kat2, 2.0))
+    println("Гипотенуза: $hupo")
+    val p = kat1 + kat2 + hupo
+    println("Периметр: $p")
+
+// 22.    Дано значение температуры в градусах Цельсия. Вывести температуру  в градусах Фаренгейта.
+    val cel = 40
+    val far = (9*cel)/5 + 32
+    println("$cel градусах Цельсия = $far градусов Фаренгейта")
+
+// 43.   Пользователь вводит номер месяца. Вывести название поры года (весна, лето и т.д.)
+    println("Enter a month number: ")
+    val monthNumber = readLine()
+    when (monthNumber) {
+        "12" -> print("Winter")
+        "01" -> print("Winter")
+        "02" -> print("Winter")
+        "03" -> print("Spring")
+        "04" -> print("Spring")
+        "05" -> print("Spring")
+        "06" -> print("Summer")
+        "07" -> print("Summer")
+        "08" -> print("Summer")
+        "09" -> print("Autumn")
+        "10" -> print("Autumn")
+        "11" -> print("Autumn")
+        else -> {
+            print("Please, make sure that you have entered a correct month number format in XX ")
+        }
+    }
+
+// 61. Дано четырехзначное число. Определите, есть ли одинаковые цифры в нем.
+    val rand = 4005
+    val nb = rand.toString()
+    
+    println(nb)
+
+
 
 
 
